@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 248 248 246; /* #F8F8F6 */
+  --foreground: 17 17 16; /* #111110 */
+  --accent: 91 91 214; /* #5B5BD6 */
+}
+
+.dark {
+  --background: 17 17 16; /* #111110 */
+  --foreground: 248 248 246; /* #F8F8F6 */
+  --accent: 124 124 230; /* lighter indigo for contrast on dark */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-background font-sans text-foreground antialiased transition-colors duration-200;
+}
+
+::selection {
+  @apply bg-accent text-white;
+}
+
+/* Hide the native cursor while the custom cursor is active (fine pointers only) */
+@media (pointer: fine) {
+  html.custom-cursor,
+  html.custom-cursor * {
+    cursor: none !important;
+  }
+}
