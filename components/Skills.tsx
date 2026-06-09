@@ -20,7 +20,7 @@ export default function Skills() {
 
   return (
     <Section id="skills" index="02" title={t.skills.title}>
-      <div className="flex flex-col gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {t.skills.groups.map((group, i) => (
           <motion.div key={group.label} {...reveal(i)}>
             <h3 className="text-sm font-medium text-foreground/50">

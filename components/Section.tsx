@@ -27,7 +27,7 @@ export default function Section({
 
   return (
     <section id={id} aria-label={title} className="scroll-mt-20">
-      <div className="mx-auto max-w-content px-6 py-16 lg:grid lg:max-w-4xl lg:grid-cols-[220px_1fr] lg:gap-12 lg:py-24">
+      <div className="mx-auto max-w-content px-6 py-16 lg:grid lg:max-w-5xl lg:grid-cols-[240px_1fr] lg:gap-12 lg:py-24 xl:max-w-6xl xl:grid-cols-[280px_1fr] xl:gap-16">
         <motion.div {...reveal} className="lg:sticky lg:top-28 lg:self-start">
           <p aria-hidden="true" className="text-xs font-medium text-accent">
             {index}

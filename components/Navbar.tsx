@@ -75,7 +75,7 @@ export default function Navbar() {
     >
       <nav
         aria-label="Main navigation"
-        className="mx-auto flex max-w-content items-center justify-between px-6 py-4 lg:max-w-4xl"
+        className="mx-auto flex max-w-content items-center justify-between px-6 py-4 lg:max-w-5xl xl:max-w-6xl"
       >
         <a href="#top" className="font-display text-base font-bold" aria-label="Home">
           NFL

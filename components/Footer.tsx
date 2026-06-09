@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-foreground/5">
-      <div className="mx-auto flex max-w-content items-center justify-between px-6 py-6 lg:max-w-4xl">
+      <div className="mx-auto flex max-w-content items-center justify-between px-6 py-6 lg:max-w-5xl xl:max-w-6xl">
         <p className="text-xs text-foreground/50">
           {t.footer.builtBy} · {new Date().getFullYear()}
         </p>
