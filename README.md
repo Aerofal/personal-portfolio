@@ -4,6 +4,13 @@ A bilingual (EN/ID) personal portfolio website with a clean, editorial design. B
 
 **Live site:** coming soon
 
+![Desktop, light mode](.github/screenshot-desktop.png)
+
+<p align="center">
+  <img src=".github/screenshot-dark.png" alt="Desktop, dark mode" width="68%" />
+  <img src=".github/screenshot-mobile.png" alt="Mobile" width="19.6%" />
+</p>
+
 ## Features
 
 - **Bilingual content** — instant English ⇄ Indonesian switching via React Context, no page reload or routing
