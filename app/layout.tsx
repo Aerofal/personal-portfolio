@@ -17,9 +17,22 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Naufal Maulana Ichlas',
+  metadataBase: new URL('https://naufalmaulana.com'),
+  title:
+    'Naufal Maulana Ichlas — Domain Expert, Project Leader & Software Engineering Student',
   description:
-    'Personal portfolio of Naufal Maulana Ichlas, a Computer Science student at Binus University and frontend developer building clean, functional digital products.',
+    'Portfolio of Naufal Maulana Ichlas, a Computer Science undergraduate in the Software Engineering stream at BINUS University, exploring product, project, people, and event operations through technology and collaborative work.',
+  alternates: { canonical: 'https://naufalmaulana.com' },
+  openGraph: {
+    type: 'website',
+    url: 'https://naufalmaulana.com',
+    siteName: 'Naufal Maulana Ichlas',
+    title:
+      'Naufal Maulana Ichlas — Domain Expert, Project Leader & Software Engineering Student',
+    description:
+      'Computer Science undergraduate in the Software Engineering stream at BINUS University, exploring product, project, people, and event operations through technology and collaborative work.',
+    locale: 'en_US',
+  },
 }
 
 // Runs before paint so the saved theme applies without a flash of light mode.

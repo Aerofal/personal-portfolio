@@ -14,7 +14,7 @@ import LanguageToggle from '@/components/LanguageToggle'
 import ThemeToggle from '@/components/ThemeToggle'
 import CursorToggle from '@/components/CursorToggle'
 
-const SECTION_IDS = ['about', 'portfolio', 'experience', 'contact']
+const SECTION_IDS = ['about', 'capabilities', 'projects', 'experience', 'volunteer', 'contact']
 
 export default function Navbar() {
   const { t } = useLanguage()
@@ -55,8 +55,10 @@ export default function Navbar() {
 
   const links = [
     { href: '#about', id: 'about', label: t.nav.about },
-    { href: '#portfolio', id: 'portfolio', label: t.nav.portfolio },
+    { href: '#capabilities', id: 'capabilities', label: t.nav.capabilities },
+    { href: '#projects', id: 'projects', label: t.nav.projects },
     { href: '#experience', id: 'experience', label: t.nav.experience },
+    { href: '#volunteer', id: 'volunteer', label: t.nav.volunteer },
     { href: '#contact', id: 'contact', label: t.nav.contact },
   ]
 
@@ -81,7 +83,7 @@ export default function Navbar() {
           NFL
         </a>
 
-        <div className="hidden items-center gap-6 sm:flex">
+        <div className="hidden items-center gap-5 md:flex lg:gap-6">
           {links.map((link) => (
             <a key={link.href} href={link.href} className={linkClass(link.id)}>
               {link.label}
@@ -92,7 +94,7 @@ export default function Navbar() {
           <CursorToggle />
         </div>
 
-        <div className="flex items-center gap-2 sm:hidden">
+        <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <button
             type="button"
@@ -119,7 +121,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={reduceMotion ? undefined : { opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="overflow-hidden border-b border-foreground/5 bg-background/95 backdrop-blur sm:hidden"
+            className="overflow-hidden border-b border-foreground/5 bg-background/95 backdrop-blur md:hidden"
           >
             <div className="flex flex-col gap-4 px-6 py-5">
               {links.map((link) => (

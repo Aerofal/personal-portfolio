@@ -7,7 +7,7 @@ import { useLanguage } from '@/components/LanguageProvider'
 import Magnetic from '@/components/Magnetic'
 import CodeCard from '@/components/CodeCard'
 
-const CYCLE_INTERVAL_MS = 2500
+const CYCLE_INTERVAL_MS = 3000
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -60,12 +60,14 @@ export default function Hero() {
               </AnimatePresence>
             </motion.div>
 
-            <motion.p
+            <motion.div
               {...stagger(2)}
-              className="mt-6 max-w-lg text-base leading-relaxed text-foreground/70"
+              className="mt-6 max-w-lg space-y-3 text-base leading-relaxed text-foreground/70"
             >
-              {t.hero.bio}
-            </motion.p>
+              {t.hero.bio.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </motion.div>
 
             <motion.div {...stagger(3)} className="mt-6 flex flex-col gap-2">
               <p className="flex items-center gap-2 text-sm text-foreground/60">
@@ -84,7 +86,7 @@ export default function Hero() {
             <motion.div {...stagger(4)} className="mt-8 flex flex-wrap gap-3">
               <Magnetic>
                 <a
-                  href="#portfolio"
+                  href="#projects"
                   className="inline-block rounded-lg bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors duration-200 hover:bg-accent"
                 >
                   {t.hero.ctaPrimary}
@@ -100,7 +102,8 @@ export default function Hero() {
               </Magnetic>
               <Magnetic>
                 <a
-                  href="/cv.pdf"
+                  href="/cv-naufal-maulana-ichlas.pdf"
+                  download
                   className="inline-flex items-center gap-2 rounded-lg border border-foreground/20 px-5 py-2.5 text-sm font-medium transition-colors duration-200 hover:border-accent hover:text-accent"
                 >
                   <FileText size={16} aria-hidden="true" />

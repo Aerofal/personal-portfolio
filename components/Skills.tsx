@@ -19,13 +19,16 @@ export default function Skills() {
         }
 
   return (
-    <Section id="skills" index="02" title={t.skills.title}>
+    <Section id="capabilities" index="02" title={t.skills.title}>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {t.skills.groups.map((group, i) => (
           <motion.div key={group.label} {...reveal(i)}>
             <h3 className="text-sm font-medium text-foreground/50">
               {group.label}
             </h3>
+            {group.note ? (
+              <p className="mt-1 text-xs text-foreground/40">{group.note}</p>
+            ) : null}
             <ul className="mt-3 flex flex-wrap gap-2">
               {group.skills.map((skill) => (
                 <li key={skill}>

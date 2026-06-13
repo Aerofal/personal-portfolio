@@ -33,9 +33,11 @@ export default function About() {
         />
 
         <div>
-          <p className="text-base leading-relaxed text-foreground/70">
-            {t.about.bio}
-          </p>
+          <div className="space-y-4 text-base leading-relaxed text-foreground/70">
+            {t.about.bio.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
 
           <ul className="mt-6 flex flex-wrap gap-2" aria-label="Fun facts">
             {t.about.facts.map((fact) => (

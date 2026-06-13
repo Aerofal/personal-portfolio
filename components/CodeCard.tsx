@@ -1,11 +1,11 @@
 'use client'
 
 const FIELDS: Array<{ key: string; value: string; isString: boolean }> = [
-  { key: 'role', value: "'Frontend Developer'", isString: true },
-  { key: 'location', value: "'BSD, Indonesia'", isString: true },
-  { key: 'education', value: "'Binus University'", isString: true },
+  { key: 'role', value: "'Aspiring Domain Expert'", isString: true },
+  { key: 'focus', value: "['Product', 'Project', 'People', 'Ops']", isString: true },
+  { key: 'education', value: "'BINUS University'", isString: true },
   { key: 'stack', value: "['TypeScript', 'React', 'Next.js']", isString: true },
-  { key: 'learning', value: "'Flutter'", isString: true },
+  { key: 'learning', value: "'Swift'", isString: true },
   { key: 'openToWork', value: 'true', isString: false },
 ]
 
