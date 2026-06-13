@@ -2,7 +2,7 @@
 
 A bilingual (EN/ID) personal portfolio website with a clean, editorial design. Built as a fully static site — no server required, deployable to any shared hosting.
 
-**Live site:** coming soon
+**Live site:** [naufalmaulana.com](https://naufalmaulana.com)
 
 ![Desktop, light mode](.github/screenshot-desktop.png)
 
@@ -49,17 +49,19 @@ app/
 components/
   Navbar.tsx          # sticky nav, scrollspy, scroll progress, toggles
   Hero.tsx            # identity switcher, CTAs, code card
-  About.tsx           # photo, bio, fun-fact chips
-  Skills.tsx          # grouped skill pills
-  Portfolio.tsx       # editorial project list
-  Experience.tsx      # timeline
+  About.tsx           # photo, reflective bio, profile chips
+  Skills.tsx          # Capabilities & Toolkit — four grouped capability lists
+  Portfolio.tsx       # Projects — compact cards + expandable Why/How/What case studies
+  Experience.tsx      # grouped org hierarchy with expandable role details
+  Volunteer.tsx       # volunteer entries
   Contact.tsx         # social links
   CustomCursor.tsx    # spring-trailing cursor (+ provider & toggle)
 lib/
-  i18n.ts             # ALL visible text in both languages — edit content here
+  i18n.ts             # ALL visible text + project/experience data in both languages
 public/
-  cv.pdf              # downloadable CV
-  .htaccess           # 404 + caching rules for Apache hosting
+  cv-naufal-maulana-ichlas.pdf   # downloadable CV (linked from the hero)
+  giby-final-project.pdf         # Giby case-study PDF (opens in a new tab)
+  .htaccess                      # 404 + caching rules for Apache hosting
 ```
 
 ## Editing Content
